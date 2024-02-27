@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #hello {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+        #hello span {
+            animation: colorChange 2s infinite alternate;
+        }
+        #click {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        @keyframes colorChange {
+            0% { color: pink; }
+            25% { color: blonde; }
+            50% { color: ginger; }
+            75% { color: #778899; }
+            100% { color: pink; }
+        }
+    </style>
+</head>
+<body>
+    <div id="hello">
+        <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span> <span>T</span><span>h</span><span>e</span><span>r</span><span>e</span>
+    </div>
+    <div id="click">
+        <a href="second_page.html">Click here</a>
+    </div>
+</body>
+</html>

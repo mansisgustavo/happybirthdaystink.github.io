@@ -1,0 +1,45 @@
+<!-- Second Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #message {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+        #bts-image {
+            margin-top: 20px;
+            width: 300px; /* Adjust as needed */
+        }
+        @keyframes eraseRewrite {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        #message.korean {
+            animation: eraseRewrite 2s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">HAPPY BIRTHDAY STINK</div>
+    <img id="bts-image" src="bts-removebg.png" alt="BTS Image">
+    <script>
+        setTimeout(function() {
+            document.getElementById('message').textContent = "생일 축하해요 스틴크";
+            document.getElementById('message').classList.add('korean');
+        }, 2000);
+    </script>
+</body>
+</html>
+
